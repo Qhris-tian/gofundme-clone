@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  gofundme:
+    build:
+      context: .
+    restart: unless-stopped
+    container_name: gofundme
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+      - "4173:4173"
+  
+  cypress:
+    image: "cypress/included:13.6.2"
+    platform: 'linux/arm64/v8'
+    depends_on:
+      - gofundme
+    environment:
+      - CYPRESS_baseUrl=http://gofundme:5173
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e

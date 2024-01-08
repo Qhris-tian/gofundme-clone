@@ -1,0 +1,42 @@
+@import './base.css';
+
+#app {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15.6px;
+  font-family: CircularXXWeb, Trebuchet, Helvetica, Arial, sans-serif;
+  font-feature-settings: 'liga', 'ss08';
+  color: #333333;
+  line-height: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+h1 {
+  @apply text-[56px] font-[500];
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply font-[700] leading-6;
+}
+
+button {
+  cursor: pointer;
+}
+
+.nav-link {
+  @apply px-2 py-1;
+}
+
+.nav-link:hover {
+  @apply bg-[#3333330d] rounded-md;
+}
