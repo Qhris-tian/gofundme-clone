@@ -379,7 +379,7 @@
           <div class="relative">
             <img src="../assets/images/home-video.jpg" alt="How GoFundMe works" />
             <div class="flex absolute top-1/2 justify-center w-full items-center">
-              <a href="#" class="flex bg-white rounded-lg py-3 px-5">
+              <a href="#" class="flex bg-white rounded-lg py-3 px-5 hover:bg-[#f8f8f8]">
                 <PlayIcon class="w-5 mr-2" />
                 <p class="font-bold">Play 1 min video</p>
               </a>
