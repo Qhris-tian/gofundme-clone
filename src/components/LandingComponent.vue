@@ -197,7 +197,7 @@
         </div>
 
         <div
-          class="w-full mt-14 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+          class="w-full mt-14 inline-flex overflow-hidden flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
           @mouseenter="() => (pauseSlider1 = true)"
           @mouseleave="() => (pauseSlider1 = false)">
           <div
@@ -225,7 +225,7 @@
         </div>
 
         <div
-          class="w-full mt-14 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
+          class="w-full mt-14 inline-flex overflow-hidden flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
           @mouseenter="() => (pauseSlider2 = true)"
           @mouseleave="() => (pauseSlider2 = false)">
           <div
@@ -253,7 +253,7 @@
         </div>
 
         <div
-          class="w-full mt-14 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
+          class="w-full mt-14 inline-flex overflow-hidden flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
           @mouseenter="() => (pauseSlider3 = true)"
           @mouseleave="() => (pauseSlider3 = false)">
           <div
