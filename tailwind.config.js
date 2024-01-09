@@ -11,6 +11,20 @@ export default {
       transitionDuration: {
         400: '400ms',
         600: '600ms'
+      },
+      animation: {
+        'infinite-scroll': 'scroll-right 50s linear infinite',
+        'infinite-scroll-left': 'scroll-left 50s linear infinite'
+      },
+      keyframes: {
+        'scroll-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        },
+        'scroll-right': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' }
+        }
       }
     }
   },

@@ -183,6 +183,104 @@
         </div>
       </div>
 
+      <div class="w-full border">
+        <div class="mb-10">
+          <div class="flex justify-center">
+            <div>
+              <h2>Help happens here</h2>
+              <p>
+                GoFundMe is where communities from around the world come together to make a
+                difference. Explore cities that are receiving the most donations right now.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-full mt-5 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+            @mouseenter="() => (pauseSlider1 = true)"
+            @mouseleave="() => (pauseSlider1 = false)">
+            <div
+              class="-ml-[100%] flex items-center justify-center md:justify-start animate-infinite-scroll"
+              :class="{ 'animation-pause': pauseSlider1 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+            <div
+              class="flex items-center justify-center md:justify-start animate-infinite-scroll"
+              :class="{ 'animation-pause': pauseSlider1 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+          </div>
+
+          <div
+            class="w-full mt-5 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
+            @mouseenter="() => (pauseSlider2 = true)"
+            @mouseleave="() => (pauseSlider2 = false)">
+            <div
+              class="flex items-center justify-center md:justify-start animate-infinite-scroll-left"
+              :class="{ 'animation-pause': pauseSlider2 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+            <div
+              class="flex items-center justify-center md:justify-start animate-infinite-scroll-left"
+              :class="{ 'animation-pause': pauseSlider2 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+          </div>
+
+          <div
+            class="w-full mt-5 inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] hover:animation-pause"
+            @mouseenter="() => (pauseSlider3 = true)"
+            @mouseleave="() => (pauseSlider3 = false)">
+            <div
+              class="-ml-[100%] flex items-center justify-center md:justify-start animate-infinite-scroll"
+              :class="{ 'animation-pause': pauseSlider3 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+            <div
+              class="flex items-center justify-center md:justify-start animate-infinite-scroll"
+              :class="{ 'animation-pause': pauseSlider3 }">
+              <DonorStateComponent :state="'Houstin'" :total="'654,430'" />
+              <DonorStateComponent :state="'Philadelphia'" :total="'565,430'" />
+              <DonorStateComponent :state="'Jamaica'" :total="'654,430'" />
+              <DonorStateComponent :state="'Saltpond'" :total="'565,430'" />
+              <DonorStateComponent :state="'Helena'" :total="'565,430'" />
+              <DonorStateComponent :state="'Regina'" :total="'565,430'" />
+              <DonorStateComponent :state="'Sekunde'" :total="'565,430'" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="flex justify-center">
         <div class="max-w-[72rem] mb-10">
           <h2 class="mb-8">Featured topics</h2>
@@ -291,9 +389,13 @@
       </div>
 
       <div class="flex justify-center mb-16">
-        <div class="w-full flex justify-center bg-[#012d19] transition-all ease-in-out duration-500" :class="{ 'max-w-[80rem] rounded-3xl': scrollTop > 2450  }">
+        <div
+          class="w-full flex justify-center bg-[#012d19] transition-all ease-in-out duration-500"
+          :class="{ 'max-w-[80rem] rounded-3xl': scrollTop > 2450 }">
           <div class="max-w-[72rem] py-48">
-            <h3 class="font-bold text-4xl text-[40px] text-white mb-14">We've got you covered. {{ scrollTop }}</h3>
+            <h3 class="font-bold text-4xl text-[40px] text-white mb-14">
+              We've got you covered. {{ scrollTop }}
+            </h3>
             <p class="font-bold leading-[1.4] text-[40px] text-white pr-40">
               GoFundMe is a trusted leader in online fundraising. With
               <span class="underline">simple pricing</span> and a team of
@@ -464,6 +566,7 @@ import DropdownTransition from './ui/DropdownTransition.vue'
 import HeroSectionComponent from './landing/HeroSectionComponent.vue'
 import SectionImageComponent from './landing/SectionImageComponent.vue'
 import FooterComponent from './landing/FooterComponent.vue'
+import DonorStateComponent from './landing/DonorStateComponent.vue'
 
 const index = ref<boolean>(false)
 const deg = ref<number>(0)
@@ -477,6 +580,9 @@ const yourselfHovered = ref<boolean>(false)
 const fnfLiHovered = ref<boolean>(false)
 const charityLiHovered = ref<boolean>(false)
 const showMoreResources = ref<boolean>(false)
+const pauseSlider1 = ref<boolean>(false)
+const pauseSlider2 = ref<boolean>(false)
+const pauseSlider3 = ref<boolean>(false)
 
 defineProps<{
   scrollTop: number
@@ -531,5 +637,9 @@ section {
   background-image: url('../assets/images/donate.png');
   background-size: cover;
   background-position: center;
+}
+
+.translate-3d {
+  transform: translate3d(0, 0, 0);
 }
 </style>
