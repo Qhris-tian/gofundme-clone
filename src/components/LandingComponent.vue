@@ -183,7 +183,7 @@
         </div>
       </div>
 
-      <div class="w-full border">
+      <div class="w-full">
         <div class="mb-10">
           <div class="flex justify-center">
             <div>
