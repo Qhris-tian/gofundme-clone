@@ -1,7 +1,7 @@
 <template>
-  <section class="hero z-0">
+  <section class="sticky top-0 z-0 flex h-[42rem]">
     <div
-      class="w-full flex justify-center items-center"
+      class="w-full flex justify-center items-center hero overflow-hidden"
       :class="{ 'bg-[#00000080] relative': toggle }"
       :style="{ top: `${top}px`, transform: `scale(${scale})` }">
       <div class="text-center">
@@ -27,9 +27,11 @@ const props = defineProps<{
 const toggle = computed(() => props.scrollTop > 5)
 
 const scale = computed<number>(() => {
-  console.log(props.scrollTop);
-  
-  if (props.scrollTop > 270) return 1.0945
+  console.log(props.scrollTop)
+
+  if (props.scrollTop > 550) return 1
+
+  if (props.scrollTop > 270) return 1.09275
 
   if (props.scrollTop > 1) return 1 + 0.00035 * props.scrollTop
 
@@ -48,9 +50,6 @@ const top = computed(() => {
   background-image: url('../../assets/images/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  position: sticky;
-  top: 0;
-  z-index: 0 !important;
 }
 
 @media screen and (min-width: 48em) {
@@ -62,8 +61,6 @@ const top = computed(() => {
 @media screen and (min-width: 64em) {
   .hero {
     background-image: url('../../assets/images/hero-desktop@1x.jpg');
-    height: 42rem;
-    display: flex;
   }
 }
 </style>
