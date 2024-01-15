@@ -14,7 +14,7 @@ install:
 	docker compose exec gofundme bun install $(i)$(I)
 
 test:
-	docker compose run --rm gofundme bun test:e2e
+	docker compose run --rm cypress
 
 test-dev:
 	docker compose run --rm gofundme bun test:e2e:dev
